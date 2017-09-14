@@ -93,7 +93,7 @@ func process() {
 		//fmt.Println(folders)
 
 		for i, str := range strs {
-			// If key 1, formatting the date time
+			// If key 1, Add new renamed file to parse. the date time
 			if i == 1 {
 
 				t, err := time.Parse(layout, str)
