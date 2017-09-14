@@ -1,5 +1,3 @@
-// Tick : This package is for updating the status of the nfdump database files.
-
 package main
 
 import (
@@ -37,7 +35,7 @@ var Config = struct {
 			Name     string `required:"true"`
 			User     string `default:"root"`
 			Password string `required:"true" env:"DBPassword"`
-			Port     string   `default:"3306"`
+			Port     string `default:"3306"`
 		}
 }{}
 
