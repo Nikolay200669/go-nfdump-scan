@@ -93,7 +93,7 @@ func process() {
 		//fmt.Println(folders)
 
 		for i, str := range strs {
-			// С ключем 1, отбираем и формируем дату время
+			// If key 1, formatting the date time
 			if i == 1 {
 
 				t, err := time.Parse(layout, str)
