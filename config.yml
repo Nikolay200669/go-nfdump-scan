@@ -1,0 +1,7 @@
+minute: 5
+
+db:
+    name:     XXX
+    user:     root
+    password: XXXXX
+    port:     3306
