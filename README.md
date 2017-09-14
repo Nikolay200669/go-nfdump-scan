@@ -6,4 +6,4 @@ This applications scan files names in structure folders and transfer in to db.
 * Install DFDUMP, with default settings. Link - http://nfdump.sourceforge.net,
 * Install dependency packages from import to `main.go`,
 * Make changes to `config.yml`,
-* Run $go run `main.go`.
+* Run `$go run main.go`.
