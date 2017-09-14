@@ -1,6 +1,6 @@
 ## NFDUMP Scan Folders to DB
 
-This applications scan files names in structure folders and transfer in to db.
+This application scan files names in structure NFDUMP folders and transfer in to db.
 
 ### Install
 * Install DFDUMP, with default settings. Link - http://nfdump.sourceforge.net,
