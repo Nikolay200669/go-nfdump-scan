@@ -1,4 +1,4 @@
-## NFDUMP Scan Folders to DB
+## NfSen Scan Folders to DB
 
 This application scan files names in structure NfSen folders and transfer in to db.
 
