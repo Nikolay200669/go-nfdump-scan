@@ -44,18 +44,8 @@ type Table struct {
 	Table string `db:"table_name"`
 }
 
-func main() {
-
-	configor.Load(&Config, "config.yml")
-
-	go process() // this for first start
-	tickTime, _ := strconv.Atoi(Config.Minute)
-	for range time.Tick(time.Minute * time.Duration(tickTime)) {
-		go process()
-	}
-}
-
-func process() {
+// Process : head function
+func Process() {
 
 	fmt.Println(Config)
 	conn, err := sqlx.Connect("mysql", Config.DB.User +":"+ Config.DB.Password +"@tcp(localhost:"+ Config.DB.Port +")/"+ Config.DB.Name)
@@ -118,4 +108,15 @@ func process() {
 	}
 
 	conn.Close()
+}
+
+func main() {
+
+	configor.Load(&Config, "config.yml")
+
+	go Process() // this for first start
+	tickTime, _ := strconv.Atoi(Config.Minute)
+	for range time.Tick(time.Minute * time.Duration(tickTime)) {
+		go Process()
+	}
 }

@@ -3,5 +3,5 @@ minute: 5
 db:
     name:     XXX
     user:     root
-    password: XXXXX
+    password: XXXX
     port:     3306
