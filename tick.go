@@ -107,7 +107,7 @@ func Process() {
 		}
 	}
 
-	conn.Close()
+	defer conn.Close()
 }
 
 func main() {
