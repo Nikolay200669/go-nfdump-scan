@@ -7,6 +7,7 @@ This application scan files names in structure NfSen folders and transfer in to 
 * Install MySQL.
 * Install dependency packages from import to `main.go`,
 * Make changes to `config.yml`,
+* Run test `$go test`,
 * Run `$go run main.go`.
 
 ### Example
